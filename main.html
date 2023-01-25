@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>   
+    <script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>    
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+<!-- 2020
+2021
+2022
+2023
+for First Name:- first-name-input
+for Last Name:- last-name-input
+for Email :- email-input
+for College Name:- college-input
+for First Name:- first-name-input
+for Roll No:- roll-no-input
+for Condition Checkbox:- conditions-checkbox -->
+<form>
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="first-name-input">First Name</label>
+            <input type="text" id="first-name-input" class="form-control is-invalid">
+            <div class="invalid-feedback">First name required</div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="last-name-input">Last Name</label>
+            <input type="text" id="last-name-input" class="form-control is-invalid">
+            <div class="invalid-feedback">Last name required</div>
 
+        </div>
+       <div class="col-md-4 mb-3">
+        <label for="email-input">Email</label>
+        <input type="text" class="form-control is-invalid" placeholder="abc@gmail.com" id="email-input">
+        <div class="invalid-feedback">Email required</div>
+       </div> 
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="college-input">College Name</label>
+            <input type="text" class="form-control is-invalid" id="college-input">
+            <div class="invalid-feedback">Please provide a valid college</div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="graduation">Graduation Year</label>
+           <select name="choose" id="graduation" class="form-control is-invalid">
+            <option value="1">Choose...</option>
+            <option value="2">2020</option>
+            <option value="3">2021</option><option value="4">2022</option><option value="5">2023</option>
+           </select>
+            <div class="invalid-feedback">Please provide a valid college</div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="roll-no-input">Roll No</label>
+            <input type="number" class="form-control is-invalid" id="roll-no-input">
+            <div class="invalid-feedback">Please provide a valid Rollno</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="conditions-checkbox" required>
+          <label class="form-check-label" for="conditions-checkbox">
+            Agree to terms and conditions
+          </label>
+          <div  class="invalid-feedback">You must agree brfore submitting</div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
 </body>
-
 </html>
